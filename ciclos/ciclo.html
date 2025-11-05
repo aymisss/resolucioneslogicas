@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Funciones en JS</title>
+</head>
+<body>
+    
+    <h1>Ejemplo de Llamada a Funciones</h1>
+
+    <p id="resultado_saludo">Esperando saludo...</p>
+    <hr>
+
+    <h2>Resultado de Puntuación: </h2>
+    <p id="resultado_puntuacion"> El cálculo aparecerá aquí.</p>
+
+    <script src="./ciclo.js"></script>
+    <script>
+        //1. LLAMADA a la función calcularPuntuación(devuelve un valor)
+        // Se le envian los ARGUMENTOS: 15 y 4
+        let total = calcularPuntuacion(15, 4);
+        // Se muestra el valor devuelto (4 * 15 = 60)
+        Document.getElementById("resultado_puntuación").textContent = " Tu puntuación final es: " + total + "puntos";
+
+        //2. LLAMADA a la función mostrarSaludo (realiza una acción)
+        //Ejecuta la función directamente para modificar el HTML
+        mostrarSaludo("Sofía");
+
+    </script>
+</body>
+</html>
