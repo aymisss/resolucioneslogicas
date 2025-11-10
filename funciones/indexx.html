@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de pedidos Modular</title>
+</head>
+<body>
+    
+    <h1>Pedidos de productos (4 items fijos)</h1>
+    <p>ingresa la cantidad deseada para cada producto</p>
+
+    <form id="formulario pedido">
+        <table>
+            <thead>
+                <tr>
+                <th>Producto</th>
+                <th>precio unitario fijo</th>
+                <th>cantidad a pedir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cafe premium (id: C01)</td>
+                    <td>$8.50</td>
+                    <td><input type="number" id="cantidad-C01" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>te verde (id: T02)</td>
+                    <td>$5.00</td>
+                    <td><input type="number" id="cantidad-T02" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>cacao en polvo (id: P03)</td>
+                    <td>$12.75</td>
+                    <td><input type="number" id="cantidad-P03" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Miel pura (id:M04)</td>
+                    <td>$9.20</td>
+                    <td><input type="number" id="cantidad-M04" value="0" min="0"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <hr>
+    <h2>Resumen del Pedido:</h2>
+    <p id="resumen final">Inicie el cálculo del pedido...</p>
+
+    <script src="./logica_pedidos.js"></script>
+</body>
+</html>
